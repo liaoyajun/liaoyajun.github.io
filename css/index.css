@@ -1,0 +1,267 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.part-wrap {
+    margin-bottom: 40px;
+    width: 1000px;
+    padding: 10px;
+    box-shadow: 0 2px 10px 0 rgba(78, 113, 232, 0.2);
+    border-radius: 12px;
+}
+.part-wrap .part-wrap-title {
+    margin-bottom: 10px;
+    width: 1008px;
+    padding: 2px 6px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4E71F2;
+    border-left: 4px solid #4E71F2;
+}
+
+.input-wrap {
+    margin-top: 20px;
+}
+.input-wrap .drop-wrap {
+    height: 100px;
+    line-height: 98px;
+    text-align: center;
+    font-size: 14px;
+    color: #9195A3;
+    border: 1px dashed #D7D9E0;
+    border-radius: 2px;
+}
+.input-wrap .or-gap {
+    margin: 10px auto 0;
+    height: 45px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4E71F2;
+}
+.input-wrap .click-wrap {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #4E71F2;
+}
+.input-wrap .click-wrap .click-wrap-input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.operation-wrap {
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.operation-wrap .operation-wrap-item {
+    position: relative;
+    width: 400px;
+}
+.operation-wrap .operation-wrap-item .operation-wrap-item-title {
+    margin-top: -45px;
+    height: 45px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4E71F2;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap {
+    box-sizing: border-box;
+    height: 100%;
+    border: 1px dashed #D7D9E0;
+    border-radius: 2px;
+    background-color: #F1F1F1;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item {
+    padding: 5px 10px;
+    height: 40px;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item:nth-child(2n) {
+    background-color: #E1E1E1;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .image {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .image-center {
+    float: left;
+    margin-left: 10px;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .image-center .image-name {
+    width: 250px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #333333;
+}
+.operation-wrap .operation-wrap-item .output-image-list .image-item .image-center .image-name {
+    width: 220px;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .image-center .image-size {
+    line-height: 18px;
+    font-size: 12px;
+    color: #666666;
+}
+.operation-wrap .operation-wrap-item .output-image-list .image-item .image-center .image-size {
+    width: 220px;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .right-btn {
+    float: right;
+    margin-top: 0.4rem;
+    width: 32px;
+    height: 32px;
+    background-position: center center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .download-btn {
+    background-image: url('./../imgs/icon-download.png');
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .compare-btn {
+    background-image: url('./../imgs/icon-compare.png');
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .del-btn {
+    background-image: url('./../imgs/icon-delete.png');
+}
+.operation-wrap .operation-wrap-item .image-list-wrap .image-item .magnifier-btn {
+    background-image: url('./../imgs/icon-magnifier.png');
+}
+.operation-wrap .operation-wrap-item .download-all {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #4E71F2;
+}
+.operation-wrap .operation-center-wrap {
+    width: 125px;
+}
+.operation-wrap .operation-center-wrap .start-compressor {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #4E71F2;
+}
+.operation-wrap .operation-center-wrap .config-item-title {
+    line-height: 20px;
+    font-size: 12px;
+    color: #333333;
+}
+.operation-wrap .operation-center-wrap .config-item-input {
+    display: block;
+    margin-bottom: 10px;
+    width: 125px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 6px;
+    font-size: 12px;
+    color: #333333;
+    background-color: #F1F1F1;
+    border-radius: 4px;
+}
+.operation-wrap .operation-center-wrap .config-tip {
+    line-height: 20px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.tip-wrap .tip-item {
+    line-height: 26px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.compare-mask {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.compare-mask .compare-origin-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.compare-mask .compare-compressor-img-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid #000000;
+}
+.compare-mask .compare-compressor-img-wrap .compare-compressor-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1265px;
+    height: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.compare-mask .close-compare-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    background-image: url('./../imgs/icon-close.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
